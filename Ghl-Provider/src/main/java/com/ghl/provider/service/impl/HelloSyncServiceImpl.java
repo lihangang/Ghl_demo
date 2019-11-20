@@ -1,14 +1,15 @@
 package com.ghl.provider.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Service;
+
 import com.ghl.provider.service.HelloSyncService;
 
-@Service
+@Service("helloSyncService")
 public class HelloSyncServiceImpl implements HelloSyncService {
 
 	@Override
 	public String saySync(String string) {
-		System.out.println(string + "你好!!");
+		System.out.println(" hello service " + string);
 		return string + "你好!!";
 	}
 }

@@ -17,6 +17,7 @@ public class HelloSyncController {
 	@RequestMapping(value = "say")
 	@ResponseBody
 	public String say(String name) throws Exception {
+		System.out.println("hello mvc " + name);
 		return helloSyncService.saySync(name);
 	}
 

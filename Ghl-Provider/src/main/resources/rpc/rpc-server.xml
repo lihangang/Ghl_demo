@@ -7,10 +7,7 @@
 	default-autowire="byName">
 
 
-
-
-	<bean id="helloSyncServiceImpl" class="com.ghl.provider.service.impl.HelloSyncServiceImpl" />
-	<sofa:service ref="helloSyncServiceImpl" interface="com.ghl.provider.service.HelloSyncService">
+	<sofa:service ref="helloSyncService" interface="com.ghl.provider.service.HelloSyncService">
 		<sofa:binding.dubbo />
 	</sofa:service>
 
